@@ -1,8 +1,6 @@
 # Soy
 
-Welcome to Soy, a specialized Mixed-Integer Linear Program (MILP) solver for Piecewise Affine (PWA) dynamics.
-
-Soy combines logical reasoning, arithmetic reasoning and stocastic local search for efficiently finding a feasible solution to a set of MILP constraints.
+Welcome to *Soy*, a specialized Mixed-Integer Linear Program (MILP) solver for Piecewise Affine (PWA) dynamics. *Soy* combines logical reasoning, arithmetic reasoning and stocastic local search for efficiently finding a feasible solution to a set of MILP constraints.
 
 
 ## Installation
@@ -38,13 +36,13 @@ make -j12
 If installation is successful, you should see all unit tests passing and an executable `Soy` is created in the build folder. 
 
 ## Dump the MILP problem in MPS format
-Soy takes in MILP problem defined in the standard MPS format. Most off-the-shelf MICP solvers (e.g., Gurobi, CPLEX, Mosek, etc.) supports dumping the model in MPS format. 
+*Soy* takes in MILP problem defined in the standard MPS format. Most off-the-shelf MICP solvers (e.g., Gurobi, CPLEX, Mosek, etc.) supports dumping the model in MPS format. 
 
 ## Solve the MILP
 
 ``./build/Soy [problem].mps --solution-file solution.txt``
 
-This will invoke Soy on the problem. It will print `sat` if a feasible solution is found, and `unsat` if the input is infeasible.
+This will invoke *Soy* on the problem. It will print `sat` if a feasible solution is found, and `unsat` if the input is infeasible.
 Moreover, If a feasible solution is found, it will dump the feasible solution in `solution.txt`. 
 
 ## Contributing
