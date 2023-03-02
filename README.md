@@ -35,7 +35,7 @@ cmake ../
 make -j12
 ```
 
-If installation is successful, you should see all unit tests passing and an executable ``Soy'' is created in the build folder. 
+If installation is successful, you should see all unit tests passing and an executable `Soy` is created in the build folder. 
 
 ## Dump the MILP problem in MPS format
 Soy takes in MILP problem defined in the standard MPS format. Most off-the-shelf MICP solvers (e.g., Gurobi, CPLEX, Mosek, etc.) supports dumping the model in MPS format. 
@@ -44,7 +44,8 @@ Soy takes in MILP problem defined in the standard MPS format. Most off-the-shelf
 
 ``./build/Soy [problem].mps --solution-file solution.txt``
 
-This will invoke Soy on the problem. If a feasible solution is found, it will dump the feasible solution in "solution.txt".
+This will invoke Soy on the problem. It will print `sat` if a feasible solution is found, and `unsat` if the input is infeasible.
+Moreover, If a feasible solution is found, it will dump the feasible solution in `solution.txt`. 
 
 ## Contributing
 We welcome both code contribution and benchmark contribution to test our solver.
