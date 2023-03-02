@@ -33,12 +33,14 @@ cmake ../
 make -j12
 ```
 
-This will download and install locally all the dependencies. If installation is successful, you should see all unit tests passing and an executable `Soy` is created in the build folder. 
+This will download and install locally all the dependencies, and build *Soy*. If installation is successful, you should see all unit tests passing and an executable `Soy` is created in the build folder. 
 
-## Dump the MILP problem in MPS format
+## How to use
+
+### Dump the MILP problem in MPS format
 *Soy* takes in MILP problem defined in the standard MPS format. Most off-the-shelf MICP solvers (e.g., Gurobi, CPLEX, Mosek, etc.) supports dumping the model in MPS format. 
 
-## Solve the MILP
+### Solve the MILP
 
 ``./build/Soy [problem].mps --solution-file solution.txt``
 
