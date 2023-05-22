@@ -2,6 +2,8 @@
 
 Welcome to *Soy*, a specialized Mixed-Integer Linear Program (MILP) solver for Piecewise Affine (PWA) dynamics. *Soy* combines logical reasoning, arithmetic reasoning and stocastic local search for efficiently finding a feasible solution to a set of MILP constraints. A special strength of *Soy* is to handle *one-hot constraints* which is crucial for encoding PWA dynamics: ``b1 + .. + bn = 1`` where bi's are binary variables.
 
+The paper describing the system is currently under submission and a preprint is available [here](https://arxiv.org/abs/2303.13697).
+
 
 ## Installation
 For now we use Gurobi as an LP solver. Gurobi requires a license (a free
