@@ -8,7 +8,7 @@
 #include "Watcher.h"
 #include "cadical.hpp"
 
-enum LiteralStatus { FALSE = 0, TRUE = 1, UNFIXED = 2 };
+enum LiteralStatus {FALSE = 0, TRUE = 1, UNFIXED = 2};
 
 class Statistics;
 
